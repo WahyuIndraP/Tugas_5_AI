@@ -142,7 +142,7 @@ perlu restart router
 
 Screenshot hasil program:
 
-![Screenshot Kasus Uji 1](Sreenshoot/Kasus1.png)
+![Screenshot Kasus Uji 1](Sreenshoot/Kasus%201.png)
 
 ---
 
@@ -169,7 +169,7 @@ masalah kemungkinan berasal dari perangkat
 
 Screenshot hasil program:
 
-![Screenshot Kasus Uji 1](Sreenshoot/Kasus2.png)
+![Screenshot Kasus Uji 1](Sreenshoot/Kasus%202.png)
 
 ---
 
@@ -191,7 +191,7 @@ tidak ditemukan kesimpulan berdasarkan aturan yang tersedia
 
 Screenshot hasil program:
 
-![Screenshot Kasus Uji 1](Screenshot/Kasus3.png)
+![Screenshot Kasus Uji 1](Sreenshoot/Kasus%203.png)
 
 ---
 
