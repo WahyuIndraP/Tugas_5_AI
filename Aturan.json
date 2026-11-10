@@ -1,0 +1,15 @@
+{
+  "judul": "Sistem Pakar Untuk Mendiagnosa Gangguan Wifi",
+  "batas": "Aturan digunakan untuk mengidentifikasi beberapa gangguan koneksi WiFi berdasarkan kondisi perangkat, router, dan koneksi internet. Hasilnya merupakan saran awal, bukan keputusan akhir.",
+  "sumber": {
+    "S1": "Memperbaiki masalah koneksi Wi-Fi di Windows, Microsoft Support, https://support.microsoft.com/id-id/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows, diakses 10 Nov 2026",
+    "S2": "Memperbaiki masalah koneksi internet pada perangkat Android, Google Support, https://support.google.com/android/answer/2651367?hl=id, diakses 10 Nov 2026"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["perangkat tersambung ke WiFi", "tidak ada akses internet"], "mode": "dan", "maka": "koneksi internet bermasalah", "sumber": "S1"},
+    {"id": "R2", "jika": ["perangkat tidak bisa mengakses internet", "perangkat lain bisa terhubung ke WiFi"], "mode": "dan", "maka": "masalah kemungkinan berasal dari perangkat", "sumber": "S1"},
+    {"id": "R3", "jika": ["indikator WiFi tidak muncul", "bar sinyal WiFi kosong"], "mode": "atau", "maka": "perangkat berada di luar jangkauan WiFi", "sumber": "S2"},
+    {"id": "R4", "jika": ["perangkat berada di luar jangkauan WiFi", "perangkat jauh dari router"], "mode": "dan", "maka": "sinyal WiFi lemah", "sumber": "S2"},
+    {"id": "R5", "jika": ["koneksi internet bermasalah", "router belum direstart"], "mode": "dan", "maka": "perlu restart router", "sumber": "S1"} 
+  ]
+}
